@@ -1,11 +1,14 @@
 require 'shape'
 
 class Triangle < Shape
-  attr_accessor :name, :base, :height
+  attr_accessor :base, :height
 
-  def initialize(name, base, height)
-    @name = name
+  def initialize(base, height)
     @base = base
     @height = height
+  end
+
+  def area 
+    self.base * self.height * 0.5
   end
 end

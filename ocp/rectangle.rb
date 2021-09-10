@@ -1,11 +1,14 @@
 require 'shape'
 
 class Rectangle < Shape
-  attr_accessor :name, :length, :width
+  attr_accessor :length, :width
 
-  def initialize(name, length, width)
-    @name = name
+  def initialize(length, width)
     @length = length
     @width = width
+  end
+
+  def area 
+    self.width * self.length
   end
 end

@@ -1,14 +1,15 @@
 class ShapeCalculator
-  def initialize
+  def initialize(shape)
+    @shape = shape
   end
 
   def calculate_area(shape)
     area = 0
 
     if shape.name == "rectangle"
-      area = shape.width * shape.length
+      area = Rectangle.new(length, width)
     elsif shape.name == "triangle"
-      area = shape.base * shape.height * 0.5
+      area = Triangle.new(base, height)
     end
 
     area

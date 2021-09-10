@@ -8,6 +8,6 @@ describe Ostrich do
  end
  it "won't fly" do
   ostrich = Ostrich.new
-  expect(ostrich.fly).to eq("I won't fly")
+  expect{ostrich.fly}.to raise_error(NoMethodError)
  end
 end

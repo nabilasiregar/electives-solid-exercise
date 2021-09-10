@@ -1,4 +1,6 @@
-class Rectangle
+require 'shape'
+
+class Rectangle < Shape
   attr_accessor :name, :length, :width
 
   def initialize(name, length, width)
